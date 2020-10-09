@@ -1,0 +1,19 @@
+#activityTitle {
+	text-align: center;
+	font-size: 38px;
+	font-family: Montserrat, Arial;
+	margin-top: 50px;
+}
+#cardArea {
+	width: 300px;
+	height: 200px;
+	margin: auto;
+	margin-top: 80px;
+	border: 3px solid #abb7b7;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+h1 {
+	text-align: center;
+}
