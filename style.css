@@ -1,18 +1,20 @@
-#activityTitle {
+title {
 	text-align: center;
-	font-size: 38px;
-	font-family: Montserrat, Arial;
-	margin-top: 50px;
+}
+
+.activityTitle {
+text-align: center;
 }
 #cardArea {
 	width: 300px;
 	height: 200px;
-	margin: auto;
-	margin-top: 80px;
-	border: 3px solid #abb7b7;
-	border-radius: 10px;
-	position: relative;
-	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	line-height: 200px;
+	font-size: 45px;
+	color: #efefef;
+	font-family:  Arial;
+	cursor: pointer;
 }
 h1 {
 	text-align: center;

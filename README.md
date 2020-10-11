@@ -9,7 +9,7 @@ Jaa Func Flashcards
 
 ## Wireframe
 
-https://media.git.generalassemb.ly/user/30886/files/8cd40d00-0946-11eb-8118-a1cb8741cfb8
+![img width="380" alt="Screen Shot 2020-10-08 at 9 12 01 AM"] ("https://media.git.generalassemb.ly/user/30886/files/0980ed00-0a14-11eb-8104-634959ebfd17")
 
 ### MVP Goals
 
