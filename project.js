@@ -125,15 +125,15 @@ questionArea.innerText = questBank[index].question;
 const buttonArea = document.querySelector('.buttonArea');
 btn.addEventListener('click', () => {
 	console.log('You clicked the button');
-	buttonArea.innerText = questBank[index].question;
+	cardArea.innerText = questBank[index].answer;
 });
 // setting the index to increment through the array
 const nextButton = document.querySelector('.nextButton');
 nextButton.addEventListener('click', () => {
 	index++;
-	questionArea.innerText = questBank[index].answer;
+	questionArea.innerText = questBank[index].question;
 	buttonArea.innerText = '';
-	if (index === 9) {
+	if (index === 4) {
 		alert('Well Done!');
 		index = 0;
 		questionArea.innerText = questBank[index].question;
@@ -144,7 +144,7 @@ nextButton.addEventListener('click', () => {
 
 //reset button and text
 nextButton.addEventListener('reset', () => {
-	questionArea.innerText = questBank[index].question;
+	questionArea.innerText = questBank[index].answer;
 	buttonArea.innerText = 'Well Done!';
 });
 //.onclick
