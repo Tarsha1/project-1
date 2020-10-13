@@ -25,8 +25,8 @@ const cardArea = document.querySelectorAll('.cardArea');
 let questBank = [
 	{
 		question:
-			'A function name can be omitted because the function can be called in a statement this is called: an anonymous function.',
-		answer: 'True or False',
+			'A function name can be omitted because the function can be called in a statement this is called: an anonymous function. True or False',
+		answer: 'True',
 	},
 	{
 		question: 'function functionName(parameter){}. What is this called? ',
@@ -89,3 +89,10 @@ nextButton.addEventListener('click', () => {
 	questionArea.innerText = questBank[index].question;
 	buttonArea.innerText = '';
 });
+
+//reset button and text
+nextButton.addEventListener('reset', () => {
+	questionArea.innerText = questBank[index].question;
+	buttonArea.innerText = 'Well Done!';
+});
+//.onclick
