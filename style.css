@@ -1,20 +1,26 @@
 title {
 	text-align: center;
 }
-
+//body {
+	//background-color: blueviolet;
+}
 .activityTitle {
 text-align: center;
 }
-#cardArea {
-	width: 300px;
-	height: 200px;
-	position: absolute;
-	text-align: center;
-	line-height: 200px;
-	font-size: 45px;
-	color: #efefef;
-	font-family:  Arial;
+.cardArea {
+	width: 12px;
+	height: 10px;
+	position: auto;
+	text-align: inline-block;
+	line-height: 10px;
+	font-size: 12px;
+	color: ;
+	font-family:  Joe Prince;
 	cursor: pointer;
+	border-bottom: black;
+	border-top: black;
+	border-left: black;
+	border-bottom: black;
 }
 h1 {
 	text-align: center;
