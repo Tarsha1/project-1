@@ -24,70 +24,122 @@ const button = document.querySelector('#buttonArea');
 const cardArea = document.querySelectorAll('.cardArea');
 let questBank = [
 	{
-		question:
+		questVal1:
 			'A function name can be omitted because the function can be called in a statement this is called: an anonymous function. True or False',
-		answer: 'True',
+		answer: { a: 'false', b: 'True'
+	},
+	correctAnswer: 'b'
 	},
 	{
-		question: 'function functionName(parameter){}. What is this called? ',
-		answer: 'declaration syntax of a function',
+		questVal2: 'function functionName(parameter){}. What is this called? ',
+		answer: { a:'declaration syntax of a function', b: 'array syntax'
+	},
+	correctAnswer: 'a'
 	},
 	{
-		question:
+		questVal3:
 			'What is this function called? hello =() => {   return "Hello World"}',
-		answer: 'arrow function',
+		answer: { a: 'arrow function', b: 'equality function'
+	},
+	correctAnswer: 'a'
+}, 
+	{
+		questVal4: 'How many primitive data-types are used in JavaScript?',
+		answer: { a: '3', b: '6'
+	},
+correctAnswer: 'b'
 	},
 	{
-		question: 'How many primitive data-types are used in JavaScript?',
-		answer: '6',
+		questVal5: 'Name the datatypes that are used in JavaScript.',
+		answer: { a: 'Boolens, Null,Undefined, Number, String, and Symbols',
+		b: 'Number, Classes, Arrays, String, Null, Gifs'  
 	},
-	{
-		question: 'Name the datatypes that are used in JavaScript.',
-		answer: 'Boolens, Null,Undefined, Number, String, and Symbols',
-	},
-	{
+	correctAnswer: 'a'
+},
+{
 		question:
-			'Is this a condition and what type?  let i   for(i=0; i<100; i++{ statement-be-executed}',
-		answer: 'Yes, For Loop',
+			'Is this a condition and what type?  Ex. let i   for(i=0; i<100; i++{ statement-be-executed}',
+		answer: { a:'Yes, For Loop', b: 'No, While Loop'
 	},
-	{
-		question:
-			'What is the postion of const in this function? const myFunc(parameter){}',
-		answer: 'the keyword',
-	},
-	{
-		question: 'What does a <div> tag do in HTML?',
-		answer: 'It is used as a container for HTML elements.',
-	},
-	{
-		question: 'Can an array make an object in JavaScript, yes or no?',
-		answer: 'Yes',
-	},
-	{
-		question:
-			'What does this function allow you to do in JavaScript?  let row =  document.getElementById("rownum")',
-		answer: "Allows you to get an element by it's ID",
-	},
+	correctAnswer: 'a'
+},
+
+		
 ];
-const box = document.getElementById('box');
+
+
+function finalScore(){
+let i = 0;
+let correct = 0;
+let selectValue;
+let question = document.getElementsByClassName('questBank')
+let select1 = document.getElementById("questVal1");
+let answer1 = select1.options[select1.selectedIndex].value;
+    if(answer1 == "right"){
+        i++;
+    }
+
+let select2 = document.getElementById("questVal2");
+let answer2 = select2.options[select2.selectedIndex].value;
+    if(answer2 == "right"){
+        i++;
+    }
+
+let select3 = document.getElementById("questVal3");
+let answer3 = select3.options[select3.selectedIndex].value;
+    if(answer3 == "right"){
+        i++;
+	}
+	let select4 = document.getElementById("questVal4");
+let answer4 = select4.options[select4.selectedIndex].value;
+    if(answer4 == "right"){
+        i++;
+	}
+	let select5 = document.getElementById("questVal5");
+let answer5 = select5.options[select5.selectedIndex].value;
+    if(answer5== "right"){
+        i++;
+    }
+	document.getElementById("scoreDisplay").innerHTML = i;
+
+}
+function finalScore() {
+	let answersCorrect = 0;
+    let answersCounter = 0;
+    foreach ("select" );{
+		let rightOrWrong = "get value";
+        if (rightOrWrong = right) {
+			answersCorrect++
+        }
+        answersCounter++;
+    }
+    let finalScore = Math.floor((answersCorrect / answersCounter) * 10);
+    document.getElementById("scoreDisplay").innerHTML = finalScore;
+}
 const btn = document.getElementById('btn');
 //initialize an index variable to store current array element index
 let index = 0;
 const questionArea = document.querySelector('.cardArea');
-//settint the question iinnerText to the first array element
+//setting the question iinnerText to the first array element
 questionArea.innerText = questBank[index].question;
 const buttonArea = document.querySelector('.buttonArea');
 btn.addEventListener('click', () => {
 	console.log('You clicked the button');
-	buttonArea.innerText = questBank[index].answer;
+	buttonArea.innerText = questBank[index].question;
 });
 // setting the index to increment through the array
 const nextButton = document.querySelector('.nextButton');
 nextButton.addEventListener('click', () => {
-	console.log('clicked');
 	index++;
-	questionArea.innerText = questBank[index].question;
+	questionArea.innerText = questBank[index].answer;
 	buttonArea.innerText = '';
+	if (index === 9) {
+		alert('Well Done!');
+		index = 0;
+		questionArea.innerText = questBank[index].question;
+	} else {
+	}
+	console.log('clicked');
 });
 
 //reset button and text
