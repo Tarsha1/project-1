@@ -26,3 +26,7 @@
 ## Unsolved Issues
 
 During the process it was alot of ups and downs but I worked hard to give an efficient and well rounded game that will allow the target audience a way to learn Javascript and have fun doing it. My challenge was mostly time not effort. I tried several diff ways to make the score make since but the feature was giving alot of bugs and I am revising them now.
+
+## Technology Used
+
+html, JavaScript, css, googgle slides, codepen.io., and DOM
