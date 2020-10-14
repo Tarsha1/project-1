@@ -1,6 +1,3 @@
-//git remote add origin https://github.com/Tarsha1/project-1.git
-Jaa Func Flashcards
-
 ## User Story
 
 - As a user from ages 12+ are able to use this game to have fun while learning JavaScript. It's and resource and a study tool
@@ -14,14 +11,18 @@ Jaa Func Flashcards
 ### MVP Goals
 
 1. start screen - completed
-2. question and answer bank that can be viewed with a clicks -completed
-3. clear the screen for the next round of questions -completed
-4. flash card will show question and give an a. and b. answer to choose from in a dropdown box. -completed
-5. Tallies your score -completed
-6. Shows your points -completed
+2. question and answer bank that can be viewed with a clicks
+3. clear the screen for the next round of questions
+4. flash card will show question and give an a. and b. answer to choose from in a dropdown box.
+5. Make a pretty interface
 
 ## Stretch Goals
 
-1. Make a pretty interface -completed
-2. Expand the Q&A bank to about 100 -still working on
-3. Store score to compare later -still working on
+1. Shows your points - still in progress
+2. Tallies your score -still in progress
+3. Expand the Q&A bank to about 100 -will work on this issue
+4. Store score to compare later - working on
+
+## Unsolved Issues
+
+During the process it was alot of ups and downs but I worked hard to give an efficient and well rounded game that will allow the target audience a way to learn Javascript and have fun doing it. My challenge was mostly time not effort. I tried several diff ways to make the score make since but the feature was giving alot of bugs and I am revising them now.
