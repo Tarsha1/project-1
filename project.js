@@ -87,7 +87,7 @@ function finalScore() {
 	if (answer5 == 'right') {
 		i++;
 	}
-	document.getElementById('scoreDisplay').innerHTML = i;
+	document.getElementById('scoreDisplay').innerHTML = index;
 }
 function finalScore() {
 	let answersCorrect = 0;
@@ -100,7 +100,7 @@ function finalScore() {
 		}
 		answersCounter++;
 	}
-	let finalScore = Math.floor((answersCorrect / answersCounter) * 10);
+	let finalScore = Math.floor((answersCorrect / answersCounter) * 20);
 	document.getElementById('scoreDisplay').innerHTML = finalScore;
 }
 const btn = document.getElementById('btn');
@@ -112,26 +112,27 @@ questionArea.innerText = questBank[index].questVal1;
 const buttonArea = document.querySelector('.buttonArea');
 btn.addEventListener('click', () => {
 	console.log('You clicked the button');
-	cardArea.innerText = questBank[index].answer;
+	cardArea.innerText = questBank[index].questVal;
 });
 // setting the index to increment through the array
-const nextButton = document.querySelector('.nextButton');
-nextButton.addEventListener('click', () => {
+const questVal = document.querySelector('.questVal');
+let nextButton = questVal;
+questVal1.addEventListener('click', () => {
 	index++;
-	questionArea.innerText = questBank[index].questVal1;
-	buttonArea.innerText = 'questVal1';
-	if (index === 4) {
+	nextButton.innerText = questBank[index].questVal;
+	nextButton.innerText = '#nextButton';
+	if (index === 5) {
 		alert('Well Done!');
 		index = 0;
-		questionArea.innerText = questBank[index].questVal;
+		questionArea.innerText = questVal[index].questVal1;
 	} else {
 	}
 	console.log('clicked');
 });
 
 //reset button and text
-nextButton.addEventListener('reset', () => {
-	questionArea.innerText = questBank[index].answer;
+questionArea.addEventListener('reset', () => {
+	questionArea.innerText = question[index].answer;
 	buttonArea.innerText = 'Well Done!';
 });
 //.onclick
