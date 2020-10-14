@@ -13,13 +13,15 @@ Jaa Func Flashcards
 
 ### MVP Goals
 
-1. start screen
-2. question and answer bank that can be viewed with a click
-3. clear the screen for the next round of questions
-4. easy short demo of code followed by a click to reveal the function name or array name.
+1. start screen - completed
+2. question and answer bank that can be viewed with a clicks -completed
+3. clear the screen for the next round of questions -completed
+4. flash card will show question and give an a. and b. answer to choose from in a dropdown box. -completed
+5. Tallies your score -completed
+6. Shows your points -completed
 
 ## Stretch Goals
 
-1. Make a pretty interface
-2. Expand the Q&A bank to about 100
-3. Make it voice interactive just to say ("Good Job")
+1. Make a pretty interface -completed
+2. Expand the Q&A bank to about 100 -still working on
+3. Store score to compare later -still working on
