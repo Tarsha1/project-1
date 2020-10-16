@@ -7,28 +7,28 @@ let questBank = [
 	{
 		questVal:
 			'A function name can be omitted because the function can be called in a statement this is called an anonymous function. True or False?',
-		answers: ['a: false', 'b: True'],
+		answers: ['a: False', 'b: True'],
 		correctAnswer: 'b',
 	},
 	{
 		questVal: 'function functionName(parameter){}. What is this called? ',
-		answer: ['a: declaration syntax of a function', 'b: array syntax'],
+		answers: ['a: declaration syntax of a function', 'b: array syntax'],
 		correctAnswer: 'a',
 	},
 	{
 		questVal:
 			'What is this function called? hello =() => {   return "Hello World"}',
-		answer: ['a: arrow function', 'b: equality function'],
+		answers: ['a: arrow function', 'b: equality function'],
 		correctAnswer: 'a',
 	},
 	{
 		questVal: 'How many primitive data-types are used in JavaScript?',
-		answer: ['a: 3', 'b: 6'],
+		answers: ['a: 3', 'b: 6'],
 		correctAnswer: 'b',
 	},
 	{
 		questVal: 'Name the datatypes that are used in JavaScript.',
-		answer: [
+		answers: [
 			'a: Boolens, Null,Undefined, Number, String, and Symbols',
 			'b: Number, Classes, Arrays, String, Null, Gifs',
 		],
@@ -48,20 +48,23 @@ const buttonArea = document.querySelector('.buttonArea');
 btn.addEventListener('click', () => {
 	answerArea.innerText =
 		questBank[index].answers[0] + ' ' + questBank[index].answers[1];
+
+	console.log(index);
 });
-// setting the index to increment through the array
-// const questVal = document.querySelector('.questVal');
+
 let nextButton = document.getElementsByClassName('nextButton')[0];
 nextButton.addEventListener('click', () => {
 	index++;
-	questionArea.innerText = questBank[index].questVal;
-	answerArea.innerText = '';
-	if (index === 4) {
+	if (5 <= index) {
 		alert('Well Done!');
 		index = 0;
 		questionArea.innerText = questBank[index].questVal;
 	} else {
+		questionArea.innerText = questBank[index].questVal;
+		answerArea.innerText = '';
 	}
+	console.log(questBank.length);
+	console.log(index);
 });
 
 //reset button and text
@@ -69,3 +72,52 @@ questionArea.addEventListener('reset', () => {
 	questionArea.innerText = question[index].answer;
 	buttonArea.innerText = 'Well Done!';
 });
+//Score board
+function finalScore() {
+	let i = 0;
+	let correct = 0;
+	let selectValue;
+	let question = document.getElementsByClassName('questBank');
+	let select1 = document.getElementById('questVal1');
+	let answer1 = select1.options[select1.selectedIndex].value;
+	if (answer1 == 'right') {
+		i++;
+	}
+
+	let select2 = document.getElementById('questVal2');
+	let answer2 = select2.options[select2.selectedIndex].value;
+	if (answer2 == 'right') {
+		i++;
+	}
+
+	let select3 = document.getElementById('questVal3');
+	let answer3 = select3.options[select3.selectedIndex].value;
+	if (answer3 == 'right') {
+		i++;
+	}
+	let select4 = document.getElementById('questVal4');
+	let answer4 = select4.options[select4.selectedIndex].value;
+	if (answer4 == 'right') {
+		i++;
+	}
+	let select5 = document.getElementById('questVal5');
+	let answer5 = select5.options[select5.selectedIndex].value;
+	if (answer5 == 'right') {
+		i++;
+	}
+	document.getElementById('scoreDisplay').innerHTML = index;
+}
+function finalScore() {
+	let answersCorrect = 0;
+	let answersCounter = 0;
+	foreach('select');
+	{
+		let rightOrWrong = 'get value';
+		if ((rightOrWrong = right)) {
+			answersCorrect++;
+		}
+		answersCounter++;
+	}
+	let finalScore = Math.floor((answersCorrect / answersCounter) * 20);
+	document.getElementById('scoreDisplay').innerHTML = finalScore;
+}
