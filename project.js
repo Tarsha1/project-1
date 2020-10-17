@@ -1,6 +1,19 @@
+const openBtn = document.getElementById('openModal');
+const modal = document.getElementById('modal');
+const close = document.getElementById('close');
+const openModal = () => {
+	modal.style.display = 'block';
+};
+openBtn.addEventListener('click', openModal);
+close.addEventListener('click', closeModal);
+
+function closeModal() {
+	modal.style.display = 'none';
+}
+
 const activityTitle = document.getElementById('activityTitle');
 const title = document.getElementById('title');
-//console.log('title');
+
 const button = document.querySelector('#buttonArea');
 const cardArea = document.querySelectorAll('.cardArea');
 let questBank = [
