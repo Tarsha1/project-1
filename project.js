@@ -4,12 +4,11 @@ const close = document.getElementById('close');
 const openModal = () => {
 	modal.style.display = 'block';
 };
-openBtn.addEventListener('click', openModal);
-close.addEventListener('click', closeModal);
-
 function closeModal() {
 	modal.style.display = 'none';
 }
+openBtn.addEventListener('click', openModal);
+close.addEventListener('click', closeModal);
 
 const activityTitle = document.getElementById('activityTitle');
 const title = document.getElementById('title');
@@ -88,12 +87,12 @@ questionArea.addEventListener('reset', () => {
 //Score board
 function finalScore() {
 	let i = 0;
-	let correct = 0;
+	let correct = 10;
 	let selectValue;
 	let question = document.getElementsByClassName('questBank');
-	let select1 = document.getElementById('questVal1');
-	let answer1 = select1.options[select1.selectedIndex].value;
-	if (answer1 == 'right') {
+	let select = document.getElementById('questVal');
+	let answer = select.options[select.selectedIndex].value;
+	if (answer == 'right') {
 		i++;
 	}
 

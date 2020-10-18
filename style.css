@@ -8,21 +8,65 @@ body {
     position: relative;
     background-size: cover;
 }
+#modal {
+    background-color: (0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+}
 
+#modal-textbox {
+    background-color: orangered;
+    height: 350px;
+    width: 550px;
+    border-radius: 2px;
+    margin: 150px auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 2%;
+    line-height: 120%;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+#modal {
+    display: none;
+    text-align: right;
+}
+
+h2 {
+    text-align: right;
+    font-size: 32px;
+
+}
+
+.modal-buttons {
+    padding: 14px 18px;
+    background-color: rgb(6, 83, 131);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: yellow;
+    font-family: 'Arial';
+    cursor: pointer;
+}
 img {
-    width: 200px;
-    height: 175px;
+    width: 90px;
+    height: 75px;
 }
 
 div {
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
     font-family: Joe Prince;
 }
 
 .divArea {
     width: 500px;
-    height: 160px;
+    height: 195px;
     position: auto;
     text-align: center;
     line-height: 20px;
@@ -33,11 +77,13 @@ div {
     margin-top: 80px;
     border: 15px solid black;
     border-radius: 20px;
-    overflow: hidden;
+    
 }
 
 h1 {
     text-align: center;
+    padding:;
+
 }
 
 .nextButton {

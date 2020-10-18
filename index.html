@@ -9,18 +9,21 @@
 		<script defer src="project.js"></script>
 	</head>
 	<body>
-		<div id="activityTitle">Jaa Func Trivia Game</div>
+		<h1>Jaa Func Trivia Game</h1>
 		 <img src="jssym.png" alt="js-symbol" width="100" height=" 100px" /> 
-		<button id="openModal">About the Game</button>
-  <div id="modal">
-    <div id="modal-textbox">
-		<h1>Let's Learn the Jaa Func Way</h1>
-		<p>Jaa Func is a trivia game that keeps score and allows you to learn and have fun doing.</p>
-		<p>1. First start by answering the question in the display screen. 2. Than hit the answer choices to get a multiple choice. 3.Next, there's answer dropdown to choose the right answer, if the answer is correct than you will get a score of ten</p>
-		<p>To move to the next question hit the next question button and repeat the instructions in 1, 2, and 3. Make sure you submit your answer choice after you finish the game to see if you win or loose!</p>
+		 <div>
+		 <button id="openModal">Game Instructions</button></div>
+		 <div id="modal">
+			 <div id="modal-textbox">
+				 <h2>Let's Learn the Jaa Func Way</h2>
+		<p>Jaa Func is a trivia game that keeps score and allows you to learn and have fun doing it.</p>
+		<p>1. First start by answering the question in the display screen. 2. Than hit the answer choices to get a multiple choice. 3.Next, there's an answer dropdown to choose the right answer, if the answer is correct than you will get a score of ten.</p>
+		<p>To move to the next question hit the next question button and repeat the instructions in 1, 2, and 3. Make sure you submit your answer choices after you finish every answer to see if you win or loose!</p>
 		<div id="modal-footer">
-<button class="modal-buttons" id="close" href="#">Close</button>
-      
+			<button class="modal-buttons" id="close" href="#">Close</button>
+		</div>
+	</div>
+      </div>
 		<div class="divArea">
 			<p class="cardArea"></p>
 			<button id="btn">Answer Choices</button>
@@ -30,7 +33,7 @@
 		<button class="nextButton">New Question</button>
 		<h2 id="title">Let's Learn JavaScript</h2>
 		<p>Select your answer from the drop-down.</p>
-		<p>Submit only after you've answer all 5 of the questions!</p>
+		<p>Submit only after you've answer all 10 of the questions!</p>
 		<select class="question" id="questVal1">
 			<option value="wrong">a</option>
 			<option value="right">b</option>
