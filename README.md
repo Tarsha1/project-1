@@ -18,10 +18,12 @@
 
 ## Stretch Goals
 
-1. Shows your points - still in progress
-2. Tallies your score -still in progress
-3. Expand the Q&A bank to about 100 -will work on this issue
-4. Store score to compare later - working on
+1. Shows your points
+2. Tallies your score
+3. Modal for instructions
+4. Let's player no if they win or lose -working on
+5. Expand the Q&A bank to about 100 -will work on this issue
+6. Store score to compare later - working on
 
 ## Unsolved Issues
 

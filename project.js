@@ -41,12 +41,43 @@ let questBank = [
 		correctAnswer: 'b',
 	},
 	{
-		questVal: 'Name the datatypes that are used in JavaScript.',
+		questVal: 'Name the data types that are used in JavaScript?',
 		answers: [
 			'a: Boolens, Null,Undefined, Number, String, and Symbols',
 			'b: Number, Classes, Arrays, String, Null, Gifs',
 		],
 		correctAnswer: 'a',
+	},
+	{
+		questVal:
+			'Is this a condition and what type? let i for(i=0; i<100; i++){ }',
+		answers: ['a: Yes, a For Loop', 'b: No, aWhile Loop'],
+		correctAnswer: 'a',
+	},
+	{
+		questVal: 'Can an array make objects? Yes or No',
+		answers: ['a: Yes', 'b: No'],
+		correctAnswer: 'a',
+	},
+	{
+		questVal:
+			'What does const represent in this function? const myFunc(parameter){}',
+		answers: ['a: A value', 'b: A keyword'],
+		correctAnswer: 'b',
+	},
+	{
+		questVal: 'What does a <div></div> do in html?',
+		answers: [
+			'a: It is used for a container for HTML elements',
+			'b: It divides numbers',
+		],
+		correctAnswer: 'a',
+	},
+	{
+		questVal:
+			'What does this function allow you to do in JavaScript? let row = document.getElementById(rowNum){}',
+		answers: ['a: nothing', "b: Allows you to get an element by it's ID"],
+		correctAnswer: 'b',
 	},
 ];
 const playersScore = document.getElementById('score');
