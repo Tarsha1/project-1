@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Jaa Func Trivia</title>
-		<link rel="stylesheet" href="style.css" />
-		<script defer src="project.js"></script>
-	</head>
-	<body>
-		<h1>Jaa Func Trivia Game</h1>
-		 <img src="jssym.png" alt="js-symbol" width="100" height=" 100px" /> 
-		 <div>
-		 <button id="openModal">Game Instructions</button></div>
-		 <div id="modal">
-			 <div id="modal-textbox">
-				 <h2>Let's Learn the Jaa Func Way</h2>
-		<p>Jaa Func is a trivia game that keeps score and allows you to learn and have fun doing it.</p>
-		<p>1. First start by answering the question in the display screen. 2. Than hit the answer choices to get a multiple choice. 3.Next, there's an answer dropdown to choose the right answer, if the answer is correct than you will get a score of ten.</p>
-		<p>To move to the next question hit the next question button and repeat the instructions in 1, 2, and 3. Make sure you submit your answer choices after you finish every answer to see if you win or loose!</p>
-		<div id="modal-footer">
-			<button class="modal-buttons" id="close" href="#">Close</button>
-		</div>
-	</div>
+        <title>Jaa Func Trivia</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="project.js"></script>
+    </head>
+    <body>
+    
+        <h1>Jaa Func Trivia Game</h1>
+         <img src="jssym.png" alt="js-symbol" width="100" height=" 100px" /> 
+         <h3 class= "playersScore" id="score"></h3>
+         <div>
+            
+         <button id="openModal">Game Instructions</button></div>
+         <div id="modal">
+             <div id="modal-textbox">
+                 <h2>Let's Learn the Jaa Func Way</h2>
+        <p>Jaa Func is a trivia game that keeps score and allows you to learn and have fun doing it.</p>
+        <p>1. First start by answering the question in the display screen. 2. Than hit the answer choices to get a multiple choice. 3.Next, there's an answer dropdown to choose the right answer, if the answer is correct than you will get a score of ten.</p>
+        <p>To move to the next question hit the next question button and repeat the instructions in 1, 2, and 3. Make sure you submit your answer choices after you finish every answer to see if you win or loose!</p>
+        <div id="modal-footer">
+            <button class="modal-buttons" id="close" href="#">Close</button>
+        </div>
+    </div>
       </div>
-		<div class="divArea">
-			<p class="cardArea"></p>
-			<button id="btn">Answer Choices</button>
-			<p class='answerArea'></p>
-		</div>
-		<p>Choose your new question here.</p>
-		<button class="nextButton">New Question</button>
-		<h2 id="title">Let's Learn JavaScript</h2>
-		<p>Select your answer from the drop-down.</p>
-		<p>Submit only after you've answer all 10 of the questions!</p>
-		<select class="question" id="questVal1">
-			<option value="wrong">a</option>
-			<option value="right">b</option>
-		</select>
-		<select class="question" id="tquestVal2">
-			<option value="right">a</option>
-			<option value="wrong">b</option>
-		</select>
-		<select class="question" id="questVal3">
-			<option value="a">a</option>
-			<option value="wrong">b</option>
-		</select>
-
-		<select class="question" id="questVal4">
-			<option value="wrong">a</option>
-			<option value="right">b</option>
-		</select>
-
-		<select class="question" id="questVal5">
-			<option value="right">a</option>
-			<option value="wrong">b</option>
-		</select>
-		<button>submit</button>
-	</body>
+        <div class="divArea">
+            <p class="cardArea"></p>
+            <button id="btn">Answer Choices</button>
+            <div class='answerArea'>
+                <h3 id="optionA"></h3>
+                <h3 id="optionB" style="margin-top: 35px;"></h3>
+            </div>
+        </div>
+        <p>Choose your new question here.</p>
+        <button class="nextButton">New Question</button>
+        <h2 id="title">Let's Learn JavaScript</h2>
+    </body>
 </html>
