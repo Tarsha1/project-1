@@ -134,3 +134,4 @@ nextButton.addEventListener('click', () => {
 	optionA.innerText = questBank[index].answers[0];
 	optionB.innerText = questBank[index].answers[1];
 });
+
