@@ -1,4 +1,4 @@
-var score = 0;
+let score = 0;
 
 const openBtn = document.getElementById('openModal');
 const modal = document.getElementById('modal');
@@ -104,6 +104,7 @@ optionA.addEventListener('click', () => {
 	// console.log(optionA.innerText[0])
 	if (optionA.innerText[0] === questBank[index].correctAnswer) {
 		console.log('CORRECT');
+		alert('CORRECT');
 		score += 10;
 		index += 1;
 		playersScore.innerText = 'score:' + score;
@@ -112,6 +113,7 @@ optionA.addEventListener('click', () => {
 		alert('wrong answer');
 		index += 1;
 	}
+	checkIfGameOver();
 });
 optionB.addEventListener('click', () => {
 	console.log('OPTION B CLICKED');
@@ -126,12 +128,25 @@ optionB.addEventListener('click', () => {
 		alert('Wrong Answer');
 		index += 1;
 	}
+	checkIfGameOver();
 });
 
 let nextButton = document.getElementsByClassName('nextButton')[0];
 nextButton.addEventListener('click', () => {
 	questionArea.innerText = questBank[index].questVal;
-	optionA.innerText = questBank[index].answers[0];
-	optionB.innerText = questBank[index].answers[1];
+	optionA.innerText = '';
+	optionB.innerText = '';
 });
-
+function checkIfGameOver() {
+	//check if the index > the length of the question array
+	//if true if score is greater than 60 the player wins if less than 60 player loses.
+	if (index >= 10) {
+		if (score >= 60) {
+			alert('You Win!');
+		} else if (score <= 50) {
+			alert('You Lose!');
+		} else {
+			alert('Game Over!');
+		}
+	}
+}
