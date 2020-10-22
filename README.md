@@ -21,13 +21,13 @@
 1. Shows your points
 2. Tallies your score
 3. Modal for instructions
-4. Let's player no if they win or lose -working on
+4. Let's player no if they win or lose
 5. Expand the Q&A bank to about 100 -will work on this issue
 6. Store score to compare later - working on
 
 ## Unsolved Issues
 
-During the process it was alot of ups and downs but I worked hard to give an efficient and well rounded game that will allow the target audience a way to learn Javascript and have fun doing it. My challenge was mostly time not effort. I tried several diff ways to make the score make since but the feature was giving alot of bugs and I am revising them now.
+During the process it was alot of ups and downs but I worked hard to give an efficient and well rounded game that will allow the target audience a way to learn Javascript and have fun doing it. My challenge was mostly time not effort. I tried several diff ways to make the score make since but the feature was giving alot of bugs and I have revised them.I managed to finish Everything in my code and some of the stretch goals. Still working
 
 ## Technology Used
 

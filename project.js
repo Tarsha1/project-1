@@ -96,12 +96,10 @@ const buttonArea = document.querySelector('.buttonArea');
 btn.addEventListener('click', () => {
 	optionA.innerText = questBank[index].answers[0];
 	optionB.innerText = questBank[index].answers[1];
-	// answerArea.innerText = questBank[index].answers[0] + ' ' + questBank[index].answers[1];
-	console.log(index);
 });
 optionA.addEventListener('click', () => {
 	console.log('OPTION A CLICKED');
-	// console.log(optionA.innerText[0])
+
 	if (optionA.innerText[0] === questBank[index].correctAnswer) {
 		console.log('CORRECT');
 		alert('CORRECT');
@@ -150,3 +148,13 @@ function checkIfGameOver() {
 		}
 	}
 }
+
+let resetButton = document.getElementsByClassName('resetButton')[0];
+resetButton.addEventListener('click', () => {
+	score = 0;
+	index = 0;
+	optionA.innerText = '';
+	optionB.innerText = '';
+	questionArea.innerText = questBank[index].questVal;
+	playersScore.innerText = 'score:' + score;
+});
