@@ -27,7 +27,7 @@
 
 ## Unsolved Issues
 
-During the process it was alot of ups and downs but I worked hard to give an efficient and well rounded game that will allow the target audience a way to learn Javascript and have fun doing it. My challenge was mostly time not effort. I tried several diff ways to make the score make since but the feature was giving alot of bugs and I have revised them.I managed to finish Everything in my code and some of the stretch goals. Still working
+During the process it was alot of ups and downs but I worked hard to give an efficient and well rounded game that will allow the target audience a way to learn Javascript and have fun doing it. My challenge was mostly time not effort. I tried several diff ways to make the score make since but the feature was giving alot of bugs and I have revised them.I managed to finish Everything in my code and some of the stretch goals. Still working on the stretch goals of 5 and 6.
 
 ## Technology Used
 
