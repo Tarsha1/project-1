@@ -6,7 +6,7 @@
 
 ## Wireframe
 
-![img width="380" alt="Screen Shot 2020-10-08 at 9 12 01 AM"] ("https://media.git.generalassemb.ly/user/30886/files/0980ed00-0a14-11eb-8104-634959ebfd17")
+![triviawf](https://media.git.generalassemb.ly/user/30886/files/47c5d580-1432-11eb-9bfe-bf40fe6e5f33)
 
 ### MVP Goals
 
